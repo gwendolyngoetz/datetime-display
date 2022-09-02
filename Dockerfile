@@ -1,0 +1,16 @@
+FROM --platform=linux/amd64 rust:1.63.0-slim as builder
+WORKDIR /app
+COPY . .
+RUN cargo install --path .
+
+FROM debian:buster-slim as runner
+WORKDIR /app
+COPY --from=builder /usr/local/cargo/bin/time-display /app/time-display
+COPY --from=builder /app/public/ /app/public/
+COPY --from=builder /app/templates/ /app/templates/
+
+ENV ROCKET_ADDRESS=0.0.0.0
+EXPOSE 8000
+
+CMD ["/app/time-display"]
+

@@ -1,0 +1,8 @@
+services:
+  time-display:
+    restart: always
+    ports:
+      - 8000:8000
+    container_name: time-display
+    image: time-display:latest
+
