@@ -294,6 +294,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "datetime-display"
+version = "0.1.0"
+dependencies = [
+ "rocket",
+ "rocket_dyn_templates",
+]
+
+[[package]]
 name = "deunicode"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1690,14 +1698,6 @@ dependencies = [
  "libc",
  "num_threads",
  "time-macros",
-]
-
-[[package]]
-name = "time-display"
-version = "0.1.0"
-dependencies = [
- "rocket",
- "rocket_dyn_templates",
 ]
 
 [[package]]
