@@ -8,7 +8,7 @@ fn rocket() -> _ {
         .attach(Template::fairing())
         .mount("/public", FileServer::from(relative!("public")))
         .mount("/", routes![index, hello])
-        .mount("/home", routes![template1])
+        .mount("/home", routes![home_index])
 }
 
 #[get("/")]
@@ -22,6 +22,6 @@ fn hello() -> &'static str {
 }
 
 #[get("/template1")]
-fn template1() -> Template {
-    Template::render("home/template1", context! { field: "value" })
+fn home_index() -> Template {
+    Template::render("home/index", context! { field: "value" })
 }

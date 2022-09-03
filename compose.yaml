@@ -1,8 +1,8 @@
 services:
-  time-display:
+  datetime-display:
     restart: always
     ports:
       - 8000:8000
-    container_name: time-display
-    image: time-display:latest
+    container_name: datetime-display
+    image: datetime-display:latest
 

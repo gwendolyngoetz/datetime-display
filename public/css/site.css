@@ -1,0 +1,10 @@
+@import "reset.css";
+@import "base.css";
+@import "layout.css";
+
+:root {
+    --color-branding-text: #ffffff;
+    --color-branding-background: #5a4799;
+    --rem-zero-dot-2: 0.2rem;
+    --rem-zero-dot-4: calc(var(--rem-zero-dot-2) * 2);
+}
