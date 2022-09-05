@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="/public/css/site.css" />
+  <title>{% block title %}{% endblock title %}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/public/css/site.css" />
 </head>
+
 <body>
-<header>
-  <div class="container">
-    {% include "shared/includes/header" %}
-  </div>
-</header>
+  <header>
+    <div class="container">
+      {% include "shared/includes/header" %}
+    </div>
+  </header>
 
-<main role="main">
+  <main role="main">
     <div class="container">{% block content %}{% endblock content %}</div>
-</main>
+  </main>
 
-<footer>
-  <div class="container">
-    {% include "shared/includes/footer" %}
-  </div>
-</footer>
-
+  <footer>
+    <div class="container">
+      {% include "shared/includes/footer" %}
+    </div>
+  </footer>
 </body>
 <html>

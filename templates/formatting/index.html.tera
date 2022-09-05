@@ -1,5 +1,7 @@
 {% extends "shared/layout" %}
 
+{% block title %}Formatting{% endblock title %}
+
 {% block content %}
 <div class="row">
     <div class="column">
