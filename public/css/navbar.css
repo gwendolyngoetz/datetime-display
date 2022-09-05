@@ -18,3 +18,9 @@
     text-decoration: none;
     text-transform: capitalize;
 }
+
+@media (max-width: 20rem) {
+    .navbar li {
+        display: block;
+    }
+}
