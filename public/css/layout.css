@@ -10,7 +10,7 @@ header {
 
 header nav,
 footer nav {
-  height: 2.4rem;
+  min-height: 2.4rem;
   display: flex;
   align-items: center;
 }

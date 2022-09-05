@@ -1,0 +1,20 @@
+.navbar li {
+    display: inline-flex;
+}
+
+.navbar li:hover {
+    background-color: var(--color-branding-hover);
+}
+
+.navbar li.active {
+    background-color: var(--color-branding-active-background);
+} 
+
+.navbar li a {
+    display: block;
+    color: var(--color-branding-text);
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: capitalize;
+}

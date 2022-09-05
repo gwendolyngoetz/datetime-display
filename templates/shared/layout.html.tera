@@ -8,11 +8,7 @@
 <body>
 <header>
   <div class="container">
-    <div class="row">
-      <div class="column">
-        <nav>header</nav>
-      </div>
-    </div>
+    {% include "shared/includes/header" %}
   </div>
 </header>
 
@@ -22,11 +18,7 @@
 
 <footer>
   <div class="container">
-    <div class="row">
-      <div class="column">
-        <nav>footer</nav>
-      </div>
-    </div>
+    {% include "shared/includes/footer" %}
   </div>
 </footer>
 
