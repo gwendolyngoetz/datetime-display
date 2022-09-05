@@ -1,0 +1,9 @@
+{% extends "shared/layout" %}
+
+{% block content %}
+<div class="row">
+    <div class="column">
+        <h1>timezone</h1>
+    </div>
+</div>
+{% endblock content %}

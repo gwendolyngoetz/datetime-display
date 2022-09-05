@@ -9,9 +9,9 @@ fn rocket() -> _ {
     rocket::build()
         .attach(Template::fairing())
         .mount("/public", FileServer::from(relative!("public")))
-        .mount("/home", routes![
-            routes::home::index
-        ])
+        .mount("/", routes![routes::home::index])
+        .mount("/formatting", routes![routes::formatting::index])
+        .mount("/timezone", routes![routes::timezone::index])
 }
 
 
