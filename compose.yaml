@@ -1,8 +1,10 @@
 services:
   datetime-display:
+    container_name: datetime-display
+    image: datetime-display:latest
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
     restart: always
     ports:
       - 8000:8000
-    container_name: datetime-display
-    image: datetime-display:latest
 
