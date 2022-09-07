@@ -14,9 +14,10 @@
     display: block;
     color: var(--color-branding-text);
     text-align: center;
-    padding: 1em;
+    padding: 1.2rem 1.2rem 1rem 1.2rem;
     text-decoration: none;
     text-transform: capitalize;
+    line-height: 1.2rem;
 }
 
 @media (max-width: 20rem) {
