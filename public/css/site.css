@@ -11,4 +11,5 @@
     --color-branding-active-background: #869947;
     --rem-zero-dot-2: 0.2rem;
     --rem-zero-dot-4: calc(var(--rem-zero-dot-2) * 2);
+    --default-font-weight: 300;
 }
