@@ -3,5 +3,12 @@ use rocket::http::uri::Origin;
 
 #[get("/")]
 pub fn index(origin: &Origin) -> Template {
-    Template::render("formatting/index", context! { origin: origin })
+    let version = option_env!("VERSION").unwrap_or("no_version").to_string();
+
+    Template::render(
+    "formatting/index", 
+    context! { 
+        version: version,
+        origin: origin 
+    })
 }

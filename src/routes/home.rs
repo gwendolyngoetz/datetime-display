@@ -6,6 +6,8 @@ use rocket_dyn_templates::{context, Template};
 
 #[get("/")]
 pub fn index(origin: &Origin) -> Template {
+    let version = option_env!("VERSION").unwrap_or("no_version").to_string();
+
     let localdatetime = Local::now();
     let localdate = localdatetime.format("%-m/%-d/%Y").to_string();
     let localtime = localdatetime.format("%-I:%M:%S %p").to_string();
@@ -19,6 +21,7 @@ pub fn index(origin: &Origin) -> Template {
     Template::render(
         "home/index",
         context! {
+            version: version,
             origin: origin,
             localdate: localdate,
             localtime: localtime,

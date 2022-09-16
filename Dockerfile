@@ -9,6 +9,9 @@ COPY --from=builder /usr/local/cargo/bin/datetime-display /app/datetime-display
 COPY --from=builder /app/public/ /app/public/
 COPY --from=builder /app/templates/ /app/templates/
 
+ARG version
+ENV VERSION=$version
+
 ENV ROCKET_ADDRESS=0.0.0.0
 EXPOSE 8000
 
