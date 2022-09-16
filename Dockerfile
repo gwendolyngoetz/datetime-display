@@ -15,5 +15,5 @@ ENV VERSION=$version
 ENV ROCKET_ADDRESS=0.0.0.0
 EXPOSE 8000
 
-CMD ["/app/datetime-display"]
+ENTRYPOINT ["/app/datetime-display"]
 
