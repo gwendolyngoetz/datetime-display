@@ -6,8 +6,11 @@ use rocket_dyn_templates::{context, Template};
 
 #[get("/")]
 pub fn index(origin: &Origin) -> Template {
-    let version = option_env!("VERSION").unwrap_or("no_version").to_string();
-
+    let version = match std::env::var("VERSION") {
+        Ok(value) => value,
+        Err(_e) => String::from("no_version")
+    };
+    
     let localdatetime = Local::now();
     let localdate = localdatetime.format("%-m/%-d/%Y").to_string();
     let localtime = localdatetime.format("%-I:%M:%S %p").to_string();

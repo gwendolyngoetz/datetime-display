@@ -3,8 +3,11 @@ use rocket::http::uri::Origin;
 
 #[get("/")]
 pub fn index(origin: &Origin) -> Template {
-    let version = option_env!("VERSION").unwrap_or("no_version").to_string();
-
+    let version = match std::env::var("VERSION") {
+        Ok(value) => value,
+        Err(_e) => String::from("no_version")
+    };
+    
     Template::render(
     "formatting/index", 
     context! { 
