@@ -2,7 +2,6 @@
 @import "layout.css";
 @import "table.css";
 @import "navbar.css";
-@import "forms.css";
 
 :root {
     --color-header-text: #ffffff;
