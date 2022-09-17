@@ -2,7 +2,9 @@
   <div class="column">
     <nav class="navbar">
       <ul>
-        <li class="{% if origin == '/' %}active{% endif %}"><a href="/">home</a></li><li class="{% if origin == '/timezone' %}active{% endif %}"><a href="/timezone">timezone</a></li><li class="{% if origin == '/formatting' %}active{% endif %}"><a href="/formatting">formatting</a></li>
+             <li><a class="{% if origin == '/' %}active{% endif %}" href="/">home</a>
+        </li><li><a class="{% if origin == '/timezone' %}active{% endif %}" href="/timezone">timezone</a>
+        </li><li><a class="{% if origin == '/formatting' %}active{% endif %}" href="/formatting">formatting</a></li>
       </ul>
     </nav>
   </div>

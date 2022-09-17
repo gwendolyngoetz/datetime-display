@@ -1,15 +1,13 @@
-@import "reset.css";
-@import "base.css";
+﻿@import "base.css";
 @import "layout.css";
+@import "table.css";
 @import "navbar.css";
-@import "form.css";
+@import "forms.css";
 
 :root {
-    --color-branding-text: #ffffff;
-    --color-branding-background: #5a4799;
-    --color-branding-hover: #888888;
-    --color-branding-active-background: #869947;
-    --rem-zero-dot-2: 0.2rem;
-    --rem-zero-dot-4: calc(var(--rem-zero-dot-2) * 2);
-    --default-font-weight: 300;
+    --color-header-text: #ffffff;
+    --color-header-background: #5a4799;
+    --color-header-hover: #888888;
+    --color-header-active-background: #5386fe;
+    --color-header-active-background: #869947;
 }
