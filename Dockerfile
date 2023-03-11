@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 rust:1.67.1-slim as builder
+FROM --platform=linux/amd64 rust:1.68.0-slim as builder
 WORKDIR /app
 COPY . .
 RUN cargo install --path .
