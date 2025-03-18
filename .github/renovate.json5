@@ -20,7 +20,6 @@
       "commitMessageExtra": "Pinned to latest digest",
       "rebaseWhen": "always",
       "description": "Ensures Docker images use SHA256 digests for security and reproducibility.",
-      "description": "Ensures Docker images use SHA256 digests while keeping the version tag as a comment.",
       "postUpdateOptions": ["comment"]
     }
   ]
