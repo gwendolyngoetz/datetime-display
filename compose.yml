@@ -47,7 +47,7 @@ services:
     image: civiform-mock-web-services
 
   db:
-    image: postgres:17.4@sha256:c522082e582d6267630d0ac3a857e262f4994012e2f841fc9eb65e7bd0500e20
+    image: postgres:17.4@sha256:7f29c02ba9eeff4de9a9f414d803faa0e6fe5e8d15ebe217e3e418c82e652b35
     stdin_open: true
     tty: true
     volumes:
@@ -76,7 +76,7 @@ services:
 
   prometheus:
     profiles: ['monitoring']
-    image: prom/prometheus@sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62
+    image: prom/prometheus@sha256:502ad90314c7485892ce696cb14a99fceab9fc27af29f4b427f41bd39701a199
     restart: unless-stopped
     volumes:
       - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml

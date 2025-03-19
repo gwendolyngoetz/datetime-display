@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 rust:1.85.0-slim@sha256:1829c432be4a592f3021501334d3fcca24f238432b13306a4e62669dec538e52 as builder
+FROM --platform=linux/amd64 rust:1.85.1-slim@sha256:9f841bbe9e7d8e37ceb96ed907265a3a0df7f44e3737d0b100e7907a679acb36 as builder
 WORKDIR /app
 COPY . .
 RUN cargo install --path .
